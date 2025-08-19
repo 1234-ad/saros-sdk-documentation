@@ -1,0 +1,60 @@
+{
+  "name": "saros-sdk-documentation",
+  "version": "1.0.0",
+  "description": "Comprehensive developer documentation for Saros Finance SDKs - Bounty submission",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node examples/basic-swap.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.js",
+    "format": "prettier --write .",
+    "example:swap": "ts-node examples/basic-swap.ts",
+    "example:liquidity": "ts-node examples/liquidity-pool.ts",
+    "example:dlmm": "ts-node examples/dlmm-position.ts",
+    "example:staking": "ts-node examples/staking-rewards.ts",
+    "example:farming": "ts-node examples/farm-operations.ts"
+  },
+  "keywords": [
+    "saros",
+    "solana",
+    "defi",
+    "amm",
+    "dlmm",
+    "staking",
+    "sdk",
+    "documentation",
+    "bounty"
+  ],
+  "author": "kevin47628",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1234-ad/saros-sdk-documentation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1234-ad/saros-sdk-documentation/issues"
+  },
+  "homepage": "https://github.com/1234-ad/saros-sdk-documentation#readme",
+  "dependencies": {
+    "@saros-finance/sdk": "^1.0.0",
+    "@saros-finance/dlmm-sdk": "^1.0.0",
+    "@solana/web3.js": "^1.78.0",
+    "@solana/spl-token": "^0.3.8"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^2.8.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^4.9.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
